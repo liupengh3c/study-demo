@@ -9,7 +9,7 @@
             label-position="left"
         >
             <div class="title-container">
-                <h3 class="title">用户登录</h3>
+                <h3 class="title">人力资源管理系统</h3>
             </div>
 
             <el-form-item prop="username">
@@ -279,13 +279,14 @@ $light_gray: #eee;
     overflow: hidden;
 
     .login-form {
+        border-radius:20px;
         background-color: rgb(41, 40, 40);
-        // opacity:0.8;
+        opacity:0.9;
         position: relative;
         width: 520px;
         max-width: 100%;
         padding: 20px 35px;
-        margin: 0 auto;
+        margin: 12% auto;
         overflow: hidden;
     }
 
