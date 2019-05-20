@@ -270,18 +270,21 @@ $dark_gray: #889aa4;
 $light_gray: #eee;
 
 .login-container {
-    // background-image: "../../assets/robin.jpg";
+    background-image: url("../../assets/robin.jpeg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
     min-height: 100%;
     width: 100%;
-    background-color: $bg;
-    // overflow: hidden;
+    background-color: gainsboro;
+    overflow: hidden;
 
     .login-form {
-        background-color: black;
+        background-color: rgb(41, 40, 40);
+        // opacity:0.8;
         position: relative;
         width: 520px;
         max-width: 100%;
-        padding: 80px 35px;
+        padding: 20px 35px;
         margin: 0 auto;
         overflow: hidden;
     }
