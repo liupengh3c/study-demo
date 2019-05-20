@@ -9,22 +9,14 @@
             label-position="left"
         >
             <div class="title-container">
-                <h3 class="title">请登录</h3>
+                <h3 class="title">用户登录</h3>
             </div>
 
             <el-form-item prop="username">
                 <span class="svg-container">
                     <svg-icon icon-class="user"/>
                 </span>
-                <el-input
-                    ref="username"
-                    v-model="loginForm.username"
-                    placeholder="Username"
-                    name="username"
-                    type="text"
-                    tabindex="1"
-                    auto-complete="on"
-                />
+                <el-input ref="username" v-model="loginForm.username"/>
             </el-form-item>
 
             <el-tooltip v-model="capsTooltip" content="Caps lock is On" placement="right" manual>
@@ -54,11 +46,11 @@
             <el-button
                 :loading="loading"
                 type="primary"
-                style="width:100%;margin-bottom:30px;"
+                style="width:100%;"
                 @click.native.prevent="handleLogin"
-            >Login</el-button>
+            >登录</el-button>
 
-            <div style="position:relative">
+            <!-- <div style="position:relative">
                 <div class="tips">
                     <span>Username : admin</span>
                     <span>Password : any</span>
@@ -73,16 +65,16 @@
                     type="primary"
                     @click="showDialog=true"
                 >Or connect with</el-button>
-            </div>
+            </div>-->
         </el-form>
 
-        <el-dialog title="Or connect with" :visible.sync="showDialog">
+        <!-- <el-dialog title="Or connect with" :visible.sync="showDialog">
             Can not be simulated on local, so please combine you own business simulation! ! !
             <br>
             <br>
             <br>
             <social-sign/>
-        </el-dialog>
+        </el-dialog>-->
     </div>
 </template>
 
@@ -278,16 +270,18 @@ $dark_gray: #889aa4;
 $light_gray: #eee;
 
 .login-container {
+    // background-image: "../../assets/robin.jpg";
     min-height: 100%;
     width: 100%;
     background-color: $bg;
-    overflow: hidden;
+    // overflow: hidden;
 
     .login-form {
+        background-color: black;
         position: relative;
         width: 520px;
         max-width: 100%;
-        padding: 160px 35px 0;
+        padding: 80px 35px;
         margin: 0 auto;
         overflow: hidden;
     }
