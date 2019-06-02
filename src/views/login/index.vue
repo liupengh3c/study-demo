@@ -50,12 +50,21 @@
                 @click.native.prevent="handleLogin"
             >登录</el-button>
 
-            <!-- <div style="position:relative">
-                <div class="tips">
-                    <span>Username : admin</span>
-                    <span>Password : any</span>
+            <div style="position:relative">
+                <div class="passport">
+                    <span>其他账号登录:</span>
+                    
+                        <img src="../../assets/Connect_logo_3.png">
+                   
                 </div>
-                <div class="tips">
+                <!-- <div class="tips">
+                    <span>其他账号登录:</span>
+                    <span>
+                        <img src="../../assets/Connect_logo_3.png">
+                    </span>
+                    <span>Password : any</span>
+                </div> -->
+                <!-- <div class="tips">
                     <span style="margin-right:18px;">Username : editor</span>
                     <span>Password : any</span>
                 </div>
@@ -64,8 +73,8 @@
                     class="thirdparty-button"
                     type="primary"
                     @click="showDialog=true"
-                >Or connect with</el-button>
-            </div>-->
+                >Or connect with</el-button> -->
+            </div>
         </el-form>
 
         <!-- <el-dialog title="Or connect with" :visible.sync="showDialog">
@@ -277,7 +286,6 @@ $light_gray: #eee;
     width: 100%;
     background-color: gainsboro;
     overflow: hidden;
-
     .login-form {
         border-radius:20px;
         background-color: rgb(41, 40, 40);
@@ -291,17 +299,25 @@ $light_gray: #eee;
     }
 
     .tips {
-        font-size: 14px;
+        font-size: 12px;
         color: #fff;
-        margin-bottom: 10px;
+        margin-top: 15px;
 
         span {
+            padding-left: 10px;
             &:first-of-type {
                 margin-right: 16px;
             }
         }
+        // img{
+        //     margin-right: 16px;
+        // }
     }
-
+    .passport{
+        font-size: 12px;
+        color: #fff;
+        height: 30px;
+    }
     .svg-container {
         padding: 6px 5px 6px 15px;
         color: $dark_gray;
