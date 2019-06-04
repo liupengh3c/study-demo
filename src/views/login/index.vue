@@ -51,19 +51,13 @@
             >登录</el-button>
 
             <div style="position:relative">
-                <div class="passport">
-                    <span>其他账号登录:</span>
-                    
-                        <img src="../../assets/Connect_logo_3.png">
-                   
-                </div>
-                <!-- <div class="tips">
+                <div class="tips">
                     <span>其他账号登录:</span>
                     <span>
                         <img src="../../assets/Connect_logo_3.png">
                     </span>
-                    <span>Password : any</span>
-                </div> -->
+                    <!-- <span>Password : any</span> -->
+                </div>
                 <!-- <div class="tips">
                     <span style="margin-right:18px;">Username : editor</span>
                     <span>Password : any</span>
@@ -73,7 +67,7 @@
                     class="thirdparty-button"
                     type="primary"
                     @click="showDialog=true"
-                >Or connect with</el-button> -->
+                >Or connect with</el-button>-->
             </div>
         </el-form>
 
@@ -281,15 +275,15 @@ $light_gray: #eee;
 .login-container {
     background-image: url("../../assets/robin.jpeg");
     background-repeat: no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
     min-height: 100%;
     width: 100%;
     background-color: gainsboro;
     overflow: hidden;
     .login-form {
-        border-radius:20px;
+        border-radius: 20px;
         background-color: rgb(41, 40, 40);
-        opacity:0.9;
+        opacity: 0.9;
         position: relative;
         width: 520px;
         max-width: 100%;
@@ -302,18 +296,19 @@ $light_gray: #eee;
         font-size: 12px;
         color: #fff;
         margin-top: 15px;
-
+        display: flex;
+        align-items: center;
         span {
             padding-left: 10px;
             &:first-of-type {
-                margin-right: 16px;
+                margin-right: 1px;
             }
         }
         // img{
         //     margin-right: 16px;
         // }
     }
-    .passport{
+    .passport {
         font-size: 12px;
         color: #fff;
         height: 30px;
